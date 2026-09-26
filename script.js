@@ -97,12 +97,12 @@ function mostraPergunta() {
   mostraAlternativas();
 }
 
-function mostraAlternativas(){
-for(const.alternativa of perguntaAtual.alternativas){
-  const botaoAlternativa = document.createElement("button");
-  botaoAlternativas.textContent = alternativa.texto;
-  caixaAlternativas.appendChild(botaoAlternativas);
-}
+function mostraAlternativas() {
+  for (const alternativa of perguntaAtual.alternativas) {
+    const botaoAlternativas = document.createElement("button");
+    botaoAlternativas.textContent = alternativa;
+    caixaAlternativas.appendChild(botaoAlternativas);
+  }
 }
 
 
