@@ -65,12 +65,12 @@ function mostraAlternativas() {
   }
 }
 
-function respostaSelecionada(opcaoSelecionada){
-      const afirmacoes = opcaoSelecionada.afirmacoes;
-      historiaFinal = afirmacoes;
-      atual++;
-      mostraPergunta()
-    }
+function respostaSelecionada(opcaoSelecionada) {
+  const afirmacoes = opcaoSelecionada.afirmacoes;
+  historiaFinal += afirmacoes + " ";
+  atual++;
+  mostraPergunta();
+}
 
 mostraPergunta();
 
